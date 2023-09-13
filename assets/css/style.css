@@ -1104,3 +1104,27 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+
+/* Animate and style button */
+#about  a {
+  box-shadow: 0 0 0 0 rgb(20 157 221);
+ 
+  -webkit-animation: resume-pulse 2.25s infinite cubic-bezier(0.54, 0, 0, 1);
+  -moz-animation: resume-pulse 2.25s infinite cubic-bezier(0.54, 0, 0, 1);
+  -ms-animation: resume-pulse 2.25s infinite cubic-bezier(0.54, 0, 0, 1);
+  animation: resume-pulse 2.25s infinite cubic-bezier(0.54, 0, 0, 1);
+}
+ 
+/* Dont animate when mouse is on button */
+#about  a:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+ 
+@-webkit-keyframes resume-pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes resume-pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes resume-pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes resume-pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
